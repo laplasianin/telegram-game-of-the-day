@@ -1,0 +1,39 @@
+[
+       {
+              "name":"com.pengrad.telegrambot.response.GetUpdatesResponse",
+              "allDeclaredConstructors" : true,
+              "allPublicConstructors" : true,
+              "allDeclaredMethods" : true,
+              "allPublicMethods" : true,
+              "allDeclaredClasses" : true,
+              "allPublicClasses" : true,
+
+              "fields":[
+                     {"name":"result", "allowUnsafeAccess":true}
+              ]
+       },
+
+       {
+              "name":"com.pengrad.telegrambot.model.Update",
+              "allDeclaredConstructors" : true,
+              "allPublicConstructors" : true,
+              "allDeclaredMethods" : true,
+              "allPublicMethods" : true,
+              "allDeclaredClasses" : true,
+              "allPublicClasses" : true,
+
+              "fields":[
+                     {"name":"update_id", "allowUnsafeAccess":true},
+                     {"name":"message", "allowUnsafeAccess":true},
+                     {"name":"edited_message", "allowUnsafeAccess":true},
+                     {"name":"channel_post", "allowUnsafeAccess":true}, {"name":"edited_channel_post", "allowUnsafeAccess":true},
+                     {"name":"inline_query", "allowUnsafeAccess":true},
+                     {"name":"chosen_inline_result", "allowUnsafeAccess":true},
+                     {"name":"callback_query", "allowUnsafeAccess":true},
+                     {"name":"shipping_query", "allowUnsafeAccess":true},
+                     {"name":"pre_checkout_query", "allowUnsafeAccess":true},
+                     {"name":"poll", "allowUnsafeAccess":true},
+                     {"name":"poll_answer", "allowUnsafeAccess":true}
+              ]
+       }
+]

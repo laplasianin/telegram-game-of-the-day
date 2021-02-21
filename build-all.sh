@@ -1,0 +1,1 @@
+rm -f telebot && ./gradlew clean && ./gradlew build && native-image --no-server --no-fallback -H:+ReportExceptionStackTraces -cp build/libs/telebot-0.1-all.jar

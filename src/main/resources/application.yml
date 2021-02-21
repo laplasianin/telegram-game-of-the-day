@@ -1,0 +1,34 @@
+micronaut:
+  application:
+    name: telebot
+jpa:
+  default:
+    entity-scan:
+      packages: 'com.laplasianin.telebot.db'
+    packages-to-scan:
+      - 'com.laplasianin.telebot.db'
+    properties:
+      hibernate:
+        bytecode:
+          provider: none
+pidor:
+  rules:
+    min:
+      people: 1
+    cooldown:
+      minutes: ${PIDOR_COOLDOWN_MINUTES:0}
+
+giphy:
+  apiKey: ${GIPHY_API_KEY:}
+
+bot:
+  token: ${PIDOR_BOT_TOKEN:}
+  self.chat.id: ${SELF_CHAT_ID:}
+datasources:
+  default:
+    url: ${PIDOR_DB_URL:`jdbc:postgresql://localhost:5432/telebot`}
+    driverClassName: org.postgresql.Driver
+    username: ${PIDOR_DB_USERNAME:postgres}
+    password: ${PIDOR_DB_PASS:postgres}
+    schema-generate: UPDATE
+    dialect: org.hibernate.dialect.PostgreSQLDialect
